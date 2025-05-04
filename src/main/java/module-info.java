@@ -5,4 +5,6 @@ module anguita.garcia.alvaro.minecrafttracker {
 
     opens anguita.garcia.alvaro.minecrafttracker to javafx.fxml;
     exports anguita.garcia.alvaro.minecrafttracker;
+	exports controller;
+	opens controller to javafx.fxml;
 }

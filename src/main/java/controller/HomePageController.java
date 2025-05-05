@@ -24,7 +24,7 @@ public class HomePageController {
 	@FXML
 	void btnCreateWorld_clicked(MouseEvent event) {
 		//	Creamos nueva pestaña formulario pidiendo todos los datos.
-		StageService.crearScena("Create new World", "createWorld-view.fxml");
+		StageService.createStage("Create new World", "createWorld-view.fxml");
 	}
 
 }

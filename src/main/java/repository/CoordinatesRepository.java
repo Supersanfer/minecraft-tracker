@@ -6,8 +6,7 @@ import model.Coordinate;
 import java.util.List;
 
 public class CoordinatesRepository implements CRUDRepository<Coordinate> {
-	@Override
-	public List<Coordinate> getAll() throws Exception {
+	public List<Coordinate> getAll() {
 		return List.of(
 			new Coordinate("overworld", "Home",10, 20, 30),
 			new Coordinate("netherworld", "Home Portal", 10, 20, 40),

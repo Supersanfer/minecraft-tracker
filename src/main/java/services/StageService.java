@@ -11,7 +11,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class StageService {
-	public static void crearScena(String title, String nameView) {
+	public static void createStage(String title, String nameView) {
 		try {
 			FXMLLoader loader = new FXMLLoader(MinecraftTrackerApp.class.getResource(nameView));
 			Parent root = loader.load();
@@ -29,5 +29,12 @@ public class StageService {
 			alert.setContentText("ERROR --- " + ex.getMessage());
 			alert.showAndWait();
 		}
+	}
+	public static void createAlert(Alert.AlertType alertType, String headerText, String title, String contentText){
+		Alert alert = new Alert(alertType);
+		alert.setHeaderText(headerText);
+		alert.setTitle(title);
+		alert.setContentText(contentText);
+		alert.showAndWait();
 	}
 }

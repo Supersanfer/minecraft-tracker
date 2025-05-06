@@ -23,11 +23,7 @@ public class StageService {
 			stage.show();
 		}
 		catch (IOException ex) {
-			Alert alert = new Alert(Alert.AlertType.ERROR);
-			alert.setHeaderText(null);
-			alert.setTitle("Exception!");
-			alert.setContentText("ERROR --- " + ex.getMessage());
-			alert.showAndWait();
+			createAlert(Alert.AlertType.ERROR, "Exception!", "", "ERROR ----" + ex.getMessage());
 		}
 	}
 	public static void createAlert(Alert.AlertType alertType, String headerText, String title, String contentText){

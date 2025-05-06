@@ -5,12 +5,11 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomePageController">
    <children>
       <Label fx:id="lblTitle" layoutX="262.0" layoutY="32.0" text="Mine Tracker" />
       <Label fx:id="lblSelectWorld" layoutX="73.0" layoutY="93.0" text="Select a world: " />
       <Button fx:id="btnCreateWorld" layoutX="426.0" layoutY="89.0" mnemonicParsing="false" onMouseClicked="#btnCreateWorld_clicked" text="Create world" />
-      <Pane fx:id="paneWorldManager" layoutX="73.0" layoutY="127.0" prefHeight="208.0" prefWidth="446.0" />
+      <Pane fx:id="paneWorldManager" layoutX="73.0" layoutY="127.0" prefHeight="199.0" prefWidth="438.0" />
    </children>
 </AnchorPane>
